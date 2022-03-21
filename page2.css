@@ -4,6 +4,9 @@ body{
     cursor: default;
     margin:0;
     padding:0;
+    background-image: url("img/3.jpg");
+    width:100vw;
+    height:100vh;
 }
 div.black{
     background-color: rgba(0,0,0,0.4);
@@ -59,7 +62,6 @@ header{
 	position: relative;
     transition-property: all;
     transition-duration: 1s;
-    
 }
 .card:hover{
     box-shadow: 5px 5px 5px #ffffff;
@@ -98,3 +100,33 @@ h1.text2{
      padding:0px 5px;
      text-shadow:1px 1px 1px #222;
  }
+
+ @media screen and (max-width: 640px){
+     h1.top{
+      color: #ffffff;
+      font-size: 5rem;
+      text-align: center;
+      font-weight: bolder;
+      margin-bottom:10px;
+      text-shadow:5px 5px 5px #222;
+      position:relative;
+}
+h2.top2{
+    color:#ffffff;
+    text-align: center;
+    margin-bottom:10px;
+    font-size:1.5rem;
+    text-shadow:5px 5px 5px #222;
+}
+h2.top3{
+    color:#ffffff;
+    text-align: center;
+    margin-bottom:70px;
+    font-size:1.5rem;
+    text-shadow:5px 5px 5px #222;
+}
+ .ex1{
+    flex-flow:row wrap;
+    overflow:scroll;
+}
+}

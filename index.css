@@ -116,6 +116,7 @@ content{
     background-attachment: fixed;
     background-position: center;
 }
+
 .card{
 	width:290px;
     height: 330px;
@@ -185,18 +186,18 @@ footer{
         font-size: large;
     }
 }
-@media screen and (max-width: 1279px){
+@media screen and (max-width: 1279px) and (min-width:481px){
     body{
-
-        width:120%;
-        height: 100%;
+        margin:0;
+        padding:0;
         left: 0%;
         position: absolute;
-}
+        }
+
     header{
         background-image: url("img/1.jpg");
-        width: 100%;
-        height:100%;
+        width: 100vw;
+        height:100vh;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -205,83 +206,87 @@ footer{
 }
     div.black{
     background-color: rgba(0,0,0,0.3);
-    width:100%;
-    height:100%;
+    width:100vw;
+    height:100vh;
 }
-    #title{
-        font-size: 30%;
-        position:absolute;
-        top:10%;
-        left:5%;
-        color:#ffffff;
-        
-    }
-    #title h1{
-        display:block;
-        font-size:40px;
-        text-shadow:5px 5px 5px #222;
-        margin-left: 20px ;
-        margin-bottom: 0;
-        font-weight: bolder;
-    }
-    #title h2{
-        margin-left: 20px ;
-        font-size:20px;
-        text-shadow:5px 5px 5px #222;
-        margin-bottom:20px;
-        font-weight: bolder;
-    }
-    #title h3{
-        font-size:25px;
-        text-shadow:5px 5px 5px #222;
-        margin-bottom:0;
-        margin-top:0 ;
-        font-weight: bold;
-    }
-    #title ul{
-        border-left:3px solid aqua;
-        padding-left: 5px;
-        margin-left: 60px;
-        font-size:30px;
-        text-shadow:5px 5px 5px #222;
-        margin-top:30px;
-        margin-bottom: 3rem;
-        font-weight: bold;
-    }
-    #title li{
-        margin-left:70px;
-        margin-top:0;
-        font-size:25px;
-        text-shadow:5px 5px 5px #222;
-        font-weight: bold;
-    }
-    #title li.li2{
-        margin-left:70px;
-        margin-top:30px;
-        font-size:25px;
-        text-shadow:5px 5px 5px #222;
-        font-weight: bold;
-    }
+#title h1{
+    display:block;
+    font-size:30px;
+    text-shadow:5px 5px 5px #222;
+    margin-left: 20px ;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+#title h2{
+    margin-left: 20px ;
+    font-size:15px;
+    text-shadow:5px 5px 5px #222;
+    margin-bottom:10px;
+    font-weight: bolder;
+}
+#title h3{
+    font-size:20px;
+    text-shadow:5px 5px 5px #222;
+    margin-bottom:0;
+    margin-top:0 ;
+    font-weight: bold;
+}
+#title ul{
+    border-left:3px solid aqua;
+    padding-left: 5px;
+    margin-left: 20px;
+    font-size:20px;
+    text-shadow:5px 5px 5px #222;
+    margin-top:30px;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+#title li{
+    margin-left:30px;
+    margin-top:0;
+    font-size:15px;
+    text-shadow:5px 5px 5px #222;
+    font-weight: bold;
+}
+#title li.li2{
+    margin-left:30px;
+    margin-top:10px;
+    font-size:15px;
+    text-shadow:5px 5px 5px #222;
+    font-weight: bold;
+}
+#title li.li3{
+    margin-left:90px;
+    margin-top:0;
+    font-size:15px;
+    text-shadow:5px 5px 5px #222;
+    font-weight: bold;
+}
     div.ex2{
         margin-top: -3rem;
         position: absolute;
         margin-left: 13rem;
     }
+    
     content{
         padding:100px 6vw;
         background-image: url(img/2.jpg);
         
-        height:50rem;
-        width:100%;
+        height:100vh;
+        width:100vw;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
     }
+    .ex22{
+        overflow:scroll;
+        flex-flow:row wrap;
+    }
     footer{
         text-decoration: underline;
         height: 50px;
-        width:100%;
+        width:100vw;
         background-color: #222;
         color:beige;
         font-size: 20px;
@@ -302,7 +307,15 @@ footer{
    }
 }
 
+
 @media screen and (max-width:480px) {
+    body{
+
+        width: 80%;
+        height: 100%;
+        left: 0%;
+        position: absolute;
+}
     #title{
         position:absolute;
         width:70%;
@@ -357,18 +370,44 @@ footer{
             text-shadow:5px 5px 5px #222;
             font-weight: bold;
         }
+        #title li.li3{
+            margin-left:90px;
+            margin-top:0;
+            font-size:15px;
+            text-shadow:5px 5px 5px #222;
+            font-weight: bold;
+        }
         div.ex2{
             margin-top: -1rem;
             position: absolute;
             margin-left: 6rem;
         }
+        content{
+            padding:100px 3vw;
+            background-image: url(img/2.jpg);
+            
+            height:80rem;
+            width:100vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
         .card{
-            width:170px;
-            height: 330px;
+            width:180px;
+            height: 280px;
             margin:1vw;
             border: 30px;
             border-color: #111;
             background-color: #ffffff;
+
+        }
+        .ex22{
+            flex-flow:row wrap;
+            overflow:scroll;
+        }
+        .ex222{
+            top:0%;
             position: relative;
         }
 
@@ -378,7 +417,7 @@ footer{
         }
         h1.text1{
            width:200px;
-           font-size: 20px;
+           font-size: 15px;
            padding:15px;
            font-weight: bolder;
            margin-bottom: 0;
@@ -396,10 +435,21 @@ footer{
              padding-left: 5px;
             white-space:nowrap;
          }
+         a.link1{
+            width: 50px;
+            font-size:10px;
+            padding:0px 5px;
+        }
+        a.link2{
+           width: 150px;
+           font-size:10px;
+           padding:0px 5px;
+       }
+    }
          footer{
             text-decoration: underline;
             height: 50px;
-            width:100%;
+            width:100vw;
             background-color: #222;
             color:beige;
             font-size: 20px;
@@ -408,4 +458,75 @@ footer{
             line-height:50px;
             padding-top:5px;
         }
-}
+        @media screen and (max-width:400px) and (max-height:700px) {
+            #title{
+                position:absolute;
+                width:90%;
+                height: 50%;
+                top:3%;
+                left:5%;
+                color:#ffffff;
+                }
+                #title h1{
+                    display:block;
+                    font-size:30px;
+                    text-shadow:5px 5px 5px #222;
+                    margin-left: 20px ;
+                    margin-bottom: 0;
+                    font-weight: bolder;
+                }
+                #title h2{
+                    margin-left: 20px ;
+                    font-size:15px;
+                    text-shadow:5px 5px 5px #222;
+                    margin-bottom:10px;
+                    font-weight: bolder;
+                }
+                #title h3{
+                    font-size:20px;
+                    text-shadow:5px 5px 5px #222;
+                    margin-bottom:0;
+                    margin-top:0 ;
+                    font-weight: bold;
+                }
+                #title ul{
+                    border-left:3px solid aqua;
+                    padding-left: 5px;
+                    margin-left: 20px;
+                    font-size:20px;
+                    text-shadow:5px 5px 5px #222;
+                    margin-top:30px;
+                    margin-bottom: 0.8rem;
+                    font-weight: bold;
+                }
+                #title li{
+                    margin-left:30px;
+                    margin-top:0;
+                    font-size:15px;
+                    text-shadow:5px 5px 5px #222;
+                    font-weight: bold;
+                }
+                #title li.li2{
+                    margin-left:30px;
+                    margin-top:10px;
+                    font-size:15px;
+                    text-shadow:5px 5px 5px #222;
+                    font-weight: bold;
+                }
+                #title li.li3{
+                    margin-left:90px;
+                    margin-top:0;
+                    font-size:15px;
+                    text-shadow:5px 5px 5px #222;
+                    font-weight: bold;
+                }
+                div.ex2{
+                    margin-top: -1rem;
+                    position: absolute;
+                    margin-left: 6rem;
+                }   
+        }
+        .ex22{
+            flex-flow:row wrap;
+            overflow:scroll;
+        }
